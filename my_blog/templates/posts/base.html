@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Blog!</title>
+    <script
+    src="http://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'master2.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="Top">
+      <nav class="header">
+        <div class="Items">
+          <ul>
+            <li><a class="main-text" href="{% url 'homePage' %}">Stick-it Notes!</a></li>
+            <li><a class='side' href="{% url 'posts:newPost' %}">Post</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+        <div class="block">
+          {% block content%}
+          {% endblock %}
+        </div>
+
+
+
+
+
+
+    <!-- <script src="{% static 'table.js' %}"></script> -->
+
+  </body>
+</html>

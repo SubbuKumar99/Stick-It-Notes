@@ -1,0 +1,24 @@
+{% extends 'posts/base.html' %}
+
+{% block content %}
+
+<h3><span class='Comment'>Hey there, post away!</span></h3>
+
+<div class="fieldWrapper">
+  <form action="{% url 'posts:newPost' %}" method="POST">
+    {% csrf_token %}
+    {% for field in form %}
+      {% if field.label_tag == 'Content' %}
+        <p class='formThings'> <strong>{{field.label_tag}}</strong>  {{field}} </p>
+      {% else %}
+        <p class='formThings'> <strong>{{field.label_tag}}</strong>  {{field}} </p><br>
+      {% endif %}
+    {% endfor %}
+
+    <br><br><br><br><br><input class='Button' type="submit" name="" value="Submit">
+  </form>
+</div>
+
+
+
+{% endblock %}

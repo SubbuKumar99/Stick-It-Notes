@@ -1,0 +1,48 @@
+{% extends 'posts/base.html' %}
+
+{% block content %}
+
+  {% for p in post reversed %}
+
+    {% if p.colour == '1' %}
+        <div class="container" style="background-color:RGB(255,255,136)">
+          <div id='Title'> {{p.title}} </div><br>
+          <div id='Content'> {{p.content}} </div><br>
+          <div id='Author'> By - {{p.author}} at {{p.created_at}} </div><br>
+        </div>
+    {% elif p.colour == '2' %}
+       <div class="container" style="background-color:rgba(152, 243, 145, 1)">
+         <div id='Title'> {{p.title}} </div><br>
+         <div id='Content'> {{p.content}} </div><br>
+         <div id='Author'> By - {{p.author}} at {{p.created_at}} </div><br>
+       </div>
+    {% elif p.colour == '3' %}
+       <div class="container" style="background-color:rgba(200, 127, 202, 1)">
+          <div id='Title'> {{p.title}} </div><br>
+          <div id='Content'> {{p.content}} </div><br>
+          <div id='Author'> By - {{p.author}} at {{p.created_at}} </div><br>
+        </div>
+    {% elif p.colour == '4' %}
+        <div class="container" style="background-color:rgba(171, 221, 239, 1)">
+          <div id='Title'> {{p.title}} </div><br>
+          <div id='Content'> {{p.content}} </div><br>
+          <div id='Author'> By - {{p.author}} at {{p.created_at}} </div><br>
+        </div>
+    {% elif p.colour == '5' %}
+        <div class="container" style="background-color:rgba(255, 178, 94, 1)">
+          <div id='Title'> {{p.title}} </div><br>
+          <div id='Content'> {{p.content}} </div><br>
+          <div id='Author'> By - {{p.author}} at {{p.created_at}} </div><br>
+        </div>
+    {% endif %}
+
+  {% endfor %}
+
+
+<br>
+
+<script type="text/javascript">
+  var post_j = "{{ post_json|escapejs }}";
+</script>
+
+{% endblock %}

@@ -1,0 +1,120 @@
+body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+td{
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#Title{
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  font-family: 'Barriecito', cursive;
+}
+
+#Content{
+  width: 90%;
+  height: 40%;
+  font-style: italic;
+  text-align: left;
+  margin-left: 4px;
+  font-family: 'Barriecito', cursive;
+}
+
+#Author{
+  text-align: left;
+  margin-left: 4px;
+  margin-top: 20px;
+  font-family: 'Barriecito', cursive;
+}
+
+.side{
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-text{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header{
+  width: 100%;
+  height: 50px;
+  background-color: rgba(239,227,227,1);
+}
+
+li{
+  list-style-type: none;
+  margin: 0 20px;
+  font-size: 3vh;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+
+}
+
+ul{
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+}
+
+.block{
+  width:100vw;
+}
+
+.container{
+  display: inline-block;
+  width: 32%;
+  height: 200px;
+  /* border: 1px solid black; */
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 1px;
+}
+
+.block{
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+}
+
+.fieldWrapper{
+  background-color: rgba(245,240,240,1);
+  width: 100%;
+  height: 100%;
+}
+
+.Comment{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.Items{
+  padding-top: 12px;
+}
+
+.formThings{
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.Button{
+  border-radius: 2px;
+  border: 3px solid white;
+}
